@@ -1,7 +1,7 @@
-diff --git a/Configuration/TypoScript/constants.typoscript b/Configuration/TypoScript/constants.typoscript
+diff --git a/src/extensions/site_t3demo/Configuration/TypoScript/constants.typoscript b/src/extensions/site_t3demo/Configuration/TypoScript/constants.typoscript
 index 3378458..288d2e3 100644
---- a/Configuration/TypoScript/constants.typoscript
-+++ b/Configuration/TypoScript/constants.typoscript
+--- a/src/extensions/site_t3demo/Configuration/TypoScript/constants.typoscript
++++ b/src/extensions/site_t3demo/Configuration/TypoScript/constants.typoscript
 @@ -19,9 +19,3 @@ styles.templates {
    layoutRootPath = EXT:site_t3demo/Resources/Private/Contenttypes/Layouts
    partialRootPath = EXT:site_t3demo/Resources/Private/Contenttypes/Partials
@@ -12,10 +12,10 @@ index 3378458..288d2e3 100644
 -[applicationContext == "Production"]
 -  umami-website-id = 5092964f-4f3e-4bbc-9717-26b4bfb68ca4
 -[end]
-diff --git a/Configuration/TypoScript/setup.typoscript b/Configuration/TypoScript/setup.typoscript
+diff --git a/src/extensions/site_t3demo/Configuration/TypoScript/setup.typoscript b/src/extensions/site_t3demo/Configuration/TypoScript/setup.typoscript
 index 805a5b4..c2d41ab 100644
---- a/Configuration/TypoScript/setup.typoscript
-+++ b/Configuration/TypoScript/setup.typoscript
+--- a/src/extensions/site_t3demo/Configuration/TypoScript/setup.typoscript
++++ b/src/extensions/site_t3demo/Configuration/TypoScript/setup.typoscript
 @@ -18,12 +18,6 @@ page {
  
    includeCSS.main = EXT:site_t3demo/Resources/Public/Css/main.css
@@ -37,10 +37,10 @@ index 805a5b4..c2d41ab 100644
    }
  
    10 = CASE
-diff --git a/Resources/Private/Pages/HeaderData/Templates/HeaderData.html b/Resources/Private/Pages/HeaderData/Templates/HeaderData.html
+diff --git a/src/extensions/site_t3demo/Resources/Private/Pages/HeaderData/Templates/HeaderData.html b/src/extensions/site_t3demo/Resources/Private/Pages/HeaderData/Templates/HeaderData.html
 index a5f184f..358a87f 100644
---- a/Resources/Private/Pages/HeaderData/Templates/HeaderData.html
-+++ b/Resources/Private/Pages/HeaderData/Templates/HeaderData.html
+--- a/src/extensions/site_t3demo/Resources/Private/Pages/HeaderData/Templates/HeaderData.html
++++ b/src/extensions/site_t3demo/Resources/Private/Pages/HeaderData/Templates/HeaderData.html
 @@ -25,6 +25,4 @@
  <link rel="preload" as="font" crossorigin="" type="font/woff" href="/typo3conf/ext/site_t3demo/Resources/Public/Fonts/Lato/Lato-Light.woff2">
  <link rel="preload" as="font" crossorigin="" type="font/woff" href="/typo3conf/ext/site_t3demo/Resources/Public/Fonts/Lato/Lato-Regular.woff2">
@@ -48,10 +48,10 @@ index a5f184f..358a87f 100644
 -<script async defer data-website-id="{settings.umami-website-id}" src="https://umami.b13.live/script.js"></script>
 -
  </html>
-diff --git a/Resources/Private/Pages/Partials/Header.html b/Resources/Private/Pages/Partials/Header.html
+diff --git a/src/extensions/site_t3demo/Resources/Private/Pages/Partials/Header.html b/src/extensions/site_t3demo/Resources/Private/Pages/Partials/Header.html
 index fe51bf8..6ccf6e8 100644
---- a/Resources/Private/Pages/Partials/Header.html
-+++ b/Resources/Private/Pages/Partials/Header.html
+--- a/src/extensions/site_t3demo/Resources/Private/Pages/Partials/Header.html
++++ b/src/extensions/site_t3demo/Resources/Private/Pages/Partials/Header.html
 @@ -4,14 +4,6 @@
  	data-namespace-typo3-fluid="true"
  >
@@ -67,10 +67,10 @@ index fe51bf8..6ccf6e8 100644
  <header class="b_header">
  	<div class="b_header__contentcontainer">
  
-diff --git a/ext_localconf.php b/ext_localconf.php
+diff --git a/src/extensions/site_t3demo/ext_localconf.php b/src/extensions/site_t3demo/ext_localconf.php
 index f5a355a..0959ee7 100644
---- a/ext_localconf.php
-+++ b/ext_localconf.php
+--- a/src/extensions/site_t3demo/ext_localconf.php
++++ b/src/extensions/site_t3demo/ext_localconf.php
 @@ -62,6 +62,8 @@ defined('TYPO3_MODE') or die();
          ]
      );
